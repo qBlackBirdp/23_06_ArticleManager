@@ -1,0 +1,49 @@
+class Main {
+  public static void main(String[] args) {
+    // 다섯 개의 클래스 객체화
+    Animal cat = new Animal();
+    Phone iphone = new Phone();
+    Person jenny = new Person();
+    Car benz = new Car();
+    Calculator casio = new Calculator();
+
+    // 객체의 메서드 호출
+    cat.makeSound(); // 출력 => 냐옹
+    iphone.call(); // 출력 => 전화 거는 중...
+    jenny.talk(); // 출력 => 안녕하세요.
+    benz.run(); // 출력 => 자동차가 달립니다.
+    casio.add(); // 출력 => 5
+  }
+}
+
+class Animal {
+  void makeSound() {
+    System.out.println("냐옹");
+  }
+}
+
+class Phone {
+  void call() {
+    System.out.println("전화 거는 중...");
+  }
+}
+
+class Person {
+  void talk() {
+    System.out.println("안녕하세요.");
+  }
+}
+
+class Car {
+  void run() {
+    System.out.println("자동차가 달립니다.");
+  }
+}
+
+class Calculator {
+  void add() {
+    int a = 2;
+    int b = 3;
+    System.out.println(a + b);
+  }
+}

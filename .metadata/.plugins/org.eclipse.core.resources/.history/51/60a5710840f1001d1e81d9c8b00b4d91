@@ -1,0 +1,131 @@
+class Main {
+  public static void main(String[] args) {
+    Musepia musepia = new Musepia();
+    
+    Vocalist choiHyeBin = new Vocalist("Choi Hye Bin", 23);
+    Guitarist yooJungHyun = new Guitarist("Yoo Jung Hyun", 26);
+    Bassist hanYoungShin = new Bassist("Han Young Shin", 27);
+    Drummer ohEunChae = new Drummer("Oh Eun Chae", 28);
+    Pianist kimDaIn = new Pianist("Kim Da In", 23);
+    
+    musepia.introduceMember(choiHyeBin);
+    musepia.introduceMember(yooJungHyun);
+    musepia.introduceMember(hanYoungShin);
+    musepia.introduceMember(ohEunChae);
+    musepia.introduceMember(kimDaIn);
+  }
+}
+
+class Musepia {
+  void introduceMember(Instrument instrument) {
+    System.out.println(instrument.getName() + " (" + instrument.getAge() + " years old)");
+  }
+}
+
+class Vocalist {
+  private String name;
+  private int age;
+
+  public Vocalist(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}
+
+class Guitarist {
+  private String name;
+  private int age;
+
+  public Guitarist(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}
+
+class Bassist {
+  private String name;
+  private int age;
+
+  public Bassist(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}
+
+class Drummer {
+  private String name;
+  private int age;
+
+  public Drummer(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}
+
+class Pianist {
+  private String name;
+  private int age;
+
+  public Pianist(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}
+
+abstract class Instrument {
+  private String name;
+  private int age;
+
+  public Instrument(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}

@@ -1,0 +1,35 @@
+class Main {
+  public static void main(String[] args) {
+    // 다섯 개의 클래스 객체 생성
+    자동차 car1 = new 자동차();
+    자동차 car2 = new 자동차();
+    동물 animal1 = new 동물();
+    동물 animal2 = new 동물();
+    과일 fruit = new 과일();
+    
+    // 생성된 객체들의 메서드 호출
+    car1.달리다();
+    car2.달리다();
+    animal1.움직이다();
+    animal2.움직이다();
+    fruit.먹기();
+  }
+}
+
+class 자동차 {
+  void 달리다() {
+    System.out.println("자동차가 달립니다.");
+  }
+}
+
+class 동물 {
+  void 움직이다() {
+    System.out.println("동물이 움직입니다.");
+  }
+}
+
+class 과일 {
+  void 먹기() {
+    System.out.println("과일을 먹습니다.");
+  }
+}

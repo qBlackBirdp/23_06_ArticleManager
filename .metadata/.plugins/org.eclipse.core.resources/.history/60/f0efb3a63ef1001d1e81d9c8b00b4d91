@@ -1,0 +1,96 @@
+class Main {
+  public static void main(String[] args) {
+    // 클래스 인스턴스 생성
+    자동차 myCar = new 자동차("벤츠", 2022, 250);
+    사람 myPerson = new 사람("홍길동", 30, "남성");
+    강아지 myDog = new 강아지("댕댕이", "진돗개", 2);
+    사각형 myRect = new 사각형(10, 20);
+    원 myCircle = new 원(5);
+    
+    // 메서드 호출
+    myCar.달리다();
+    myPerson.인사하다();
+    myDog.짖다();
+    myRect.넓이구하기();
+    myCircle.넓이구하기();
+  }
+}
+
+class 자동차 {
+  String 모델명;
+  int 연식;
+  int 최고속력;
+  
+  // 생성자
+  public 자동차(String 모델명, int 연식, int 최고속력) {
+    this.모델명 = 모델명;
+    this.연식 = 연식;
+    this.최고속력 = 최고속력;
+  }
+  
+  void 달리다() {
+    System.out.println(모델명 + " 자동차가 최고속력 " + 최고속력 + "km로 달립니다.");
+  }
+}
+
+class 사람 {
+  String 이름;
+  int 나이;
+  String 성별;
+  
+  // 생성자
+  public 사람(String 이름, int 나이, String 성별) {
+    this.이름 = 이름;
+    this.나이 = 나이;
+    this.성별 = 성별;
+  }
+  
+  void 인사하다() {
+    System.out.println(이름 + "님, 안녕하세요.");
+  }
+}
+
+class 강아지 {
+  String 이름;
+  String 종;
+  int 나이;
+  
+  // 생성자
+  public 강아지(String 이름, String 종, int 나이) {
+    this.이름 = 이름;
+    this.종 = 종;
+    this.나이 = 나이;
+  }
+  
+  void 짖다() {
+    System.out.println(이름 + "가 멍멍 짖습니다.");
+  }
+}
+
+class 사각형 {
+  int 가로;
+  int 세로;
+  
+  // 생성자
+  public 사각형(int 가로, int 세로) {
+    this.가로 = 가로;
+    this.세로 = 세로;
+  }
+  
+  void 넓이구하기() {
+    int 넓이 = 가로 * 세로;
+    System.out.println("사각형의 넓이는 " + 넓이 + "입니다.");
+  }
+}
+
+class 원 {
+  int 반지름;
+  final double PI = 3.14159265358979323846;
+  
+  // 생성자
+  public 원(int 반지름) {
+    this.반지름 = 반지름;
+  }
+  
+  void 넓이구하기() {
+    double 넓이 = PI * 반지름 *
